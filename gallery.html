@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Natanael">
+    <meta name="title" content="Michael Natanael's Gallery">
+    <meta name="description" content="This is my gallery.">
+    <meta name="keywords" content="gallery">
+
+    <!-- Refresh page every 10 seconds -->
+    <!-- <meta http-equiv="refresh" content="10"> -->
+
+    <!-- Page Title -->
+    <title>Michael Natanael's Gallery</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/assets/img/Logo MN YouTube.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700" rel="stylesheet">
+
+    <!-- External CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+
+<body>
+    <!-- Main Heading -->
+    <header role="banner">
+        <h1>Michael Natanael's Gallery</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="topnav" role="navigation">
+        <ul>
+            <li><a href="index.html#introduction" onclick="changeActiveNav('#introduction')">Introduction</a>
+            </li>
+            <li><a href="index.html#my-favorite-websites" onclick="changeActiveNav('#my-favorite-websites')">My Favorite
+                    Websites</a></li>
+            <li><a href="index.html#table-of-interests" onclick="changeActiveNav('#table-of-interests')">Table of
+                    Interests</a>
+            </li>
+            <li><a href="index.html#media-showcase" onclick="changeActiveNav('#media-showcase')">Media Showcase</a></li>
+            <li><a href="index.html#contact-form" onclick="changeActiveNav('#contact-form')">Contact Form</a></li>
+            <li><a class="nav-active" href="#">Gallery</a></li>
+            <li><a href="social_media.html">Social Media</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Bottom Arrow Navigation -->
+    <a href="#footer">
+        <svg fill="#000000" viewBox="0 0 24 24" id="down-direction-circle" data-name="Flat Color"
+            xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <circle id="primary" cx="12" cy="12" r="10" style="fill: #0096c7;"></circle>
+                <path id="secondary"
+                    d="M14,12v4a1,1,0,0,1-1,1H11a1,1,0,0,1-1-1V12H9.18a1,1,0,0,1-.76-1.65l2.82-3.27a1,1,0,0,1,1.52,0l2.82,3.27A1,1,0,0,1,14.82,12Z"
+                    style="fill: white;"></path>
+            </g>
+        </svg>
+    </a>
+
+    <article>
+        <h2>My Design Collections</h2>
+        <p>Resize the browser window to see the <b>responsive effect</b></p>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <figure>
+                    <img src="assets/img/gallery/atom.png" class="border two-radius">
+                    <figcaption>Atom</figcaption>
+                </figure>
+                <img src="assets/img/gallery/baca tulis.png" class="border-top-right">
+                <img src="assets/img/gallery/bc.png" class="one-radius">
+                <img src="assets/img/gallery/future-id.png" class="one-radius">
+                <img src="assets/img/gallery/simple_database.jpg" class="one-radius">
+                <img src="assets/img/gallery/binary.png" class="one-radius">
+                <img src="assets/img/gallery/buku.png" class="one-radius">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/img/gallery/cangkir.png" class="two-radius">
+                    <figcaption>Cangkir</figcaption>
+                </figure>
+                <img src="assets/img/gallery/coin.png" class="border-top-left">
+                <img src="assets/img/gallery/covid - 19.png" class="one-radius">
+                <img src="assets/img/gallery/Desain ID Card - Michael Natanael.png" class="one-radius">
+                <img src="assets/img/gallery/chef.png" class="one-radius">
+                <img src="assets/img/gallery/cecak 2.png" class="one-radius">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/img/gallery/Desain Mug - Michael Natanael.png" class="two-radius">
+                    <figcaption>Desain Mug</figcaption>
+                </figure>
+                <img src="assets/img/gallery/internet.png" class="border-bottom-left">
+                <img src="assets/img/gallery/digital.png" class="one-radius">
+                <img src="assets/img/gallery/dimsum paradise.png" class="one-radius">
+                <img src="assets/img/gallery/hemat listrik - Michael Natanael.png" class="one-radius">
+                <img src="assets/img/gallery/infrared helmet.jpg" class="one-radius">
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="assets/img/gallery/jago_nihongo.jpeg" class="two-radius">
+                    <figcaption>Jago Nihongo</figcaption>
+                </figure>
+                <img src="assets/img/gallery/logo1.png" class="border-bottom-right">
+                <img src="assets/img/gallery/logo2.png" class="one-radius">
+                <img src="assets/img/gallery/logo3.jpg" class="one-radius">
+                <img src="assets/img/gallery/number.png" class="one-radius">
+                <img src="assets/img/gallery/statistic.png" class="one-radius">
+                <img src="assets/img/gallery/ion.png" class="one-radius">
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <footer id="footer" role="contentinfo">
+        <!-- Copyright Section -->
+        <div id="copyright">
+            <!-- HTML Entities: Use HTML entities to display special characters like <, >, and &. -->
+            <strong>&copy; Copyright 2023 &lt; Michael Natanael &gt;</strong>
+        </div>
+
+        <!-- Top Arrow Navigation -->
+        <a href="#top">
+            <svg fill="#000000" viewBox="0 0 24 24" id="up-direction-circle" data-name="Flat Color"
+                xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <circle id="primary" cx="12" cy="12" r="10" style="fill: #0096c7;"></circle>
+                    <path id="secondary"
+                        d="M14,12v4a1,1,0,0,1-1,1H11a1,1,0,0,1-1-1V12H9.18a1,1,0,0,1-.76-1.65l2.82-3.27a1,1,0,0,1,1.52,0l2.82,3.27A1,1,0,0,1,14.82,12Z"
+                        style="fill: white;"></path>
+                </g>
+            </svg>
+        </a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.border {
+    border: 5px solid greenyellow;
+}
+
+.four-radius {
+    border-radius: 50px 70px 90px 110px;
+}
+
+.three-radius {
+    border-radius: 50px 70px 90px;
+}
+
+.two-radius {
+    border-radius: 10px 40px;
+}
+
+.one-radius {
+    border-radius: 30px;
+}
+
+.border-top-left {
+    border-top-left-radius: 40px;
+}
+
+.border-top-right {
+    border-top-right-radius: 40px;
+}
+
+.border-bottom-left {
+    border-bottom-left-radius: 40px;
+}
+
+.border-bottom-right {
+    border-bottom-right-radius: 40px;
+}
+
+.border-img {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(https://media.istockphoto.com/photos/modern-abstract-background-picture-id1178390169?b=1&k=20&m=1178390169&s=170667a&w=0&h=wMuCApdJNQww4TaiO19Z1haAlBhI2n5wvmx4gMgkyP4=);
+}
+
+.img-slice {
+    border-image-slice: 20%;
+}
+
+.img-width {
+    border-image-width: 20px;
+}
+
+.img-outset {
+    border-image-outset: 5px;
+}
+
+.img-repeat {
+    border-image-repeat: round;
+}
+
+.border-img-shorthand {
+    border: 10px solid transparent;
+    border-image: url(border.png) 20% / 20px / 5px repeat;
+}
+
+figcaption {
+    font-weight: bold;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: white;
+}
+
+/* Responsive Image Grid Gallery Start */
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+img {
+    padding: 1rem;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive Image Grid Gallery End */

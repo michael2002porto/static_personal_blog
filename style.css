@@ -1,0 +1,393 @@
+/* CSS Basics: Add a stylesheet to your HTML project and use selectors to target elements. */
+/* Common Properties: Style your text, headings, and links using at least 10 different CSS properties. */
+
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire page */
+    background-color: #f5f5f5; /* Set the background color */
+    color: #333; /* Set the text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style the main header */
+header {
+    text-align: center; /* Center-align the text */
+    background-color: #333; /* Set background color */
+    color: white; /* Set text color to white */
+    padding: 20px; /* Add padding around the header */
+}
+
+/* Responsive Navigation Bar */
+
+#topnav {
+    margin-top: 0.3rem; /* Add margin to the top of the navigation bar */
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--secondary-color); /* Use CSS variable for background color */
+    position: -webkit-sticky; /* Make the navigation bar sticky for some browsers */
+    position: sticky; /* Make the navigation bar sticky */
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 1; /* Set the stacking order */
+}
+
+#topnav ul {
+    list-style-type: none; /* Remove default list style */
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color); /* Use CSS variable for background color */
+    top: 0;
+}
+
+#topnav li {
+    float: left; /* Float the list items to create a horizontal layout */
+}
+
+#topnav li a {
+    display: block;
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align the text */
+    padding: 14px 16px; /* Add padding to the navigation links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#topnav li a:hover {
+    background-color: #111; /* Change background color on hover */
+}
+
+.nav-active {
+    background-color: #0096c7; /* Set background color for active navigation link */
+}
+
+/* Style the main heading */
+h1 {
+    font-size: 36px; /* Set font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style the horizontal rule */
+hr {
+    border: 2px solid #333; /* Set border properties */
+    margin: 20px 0; /* Add margin above and below the horizontal rule */
+}
+
+/* Style the introduction section */
+article {
+    background-color: white; /* Set background color */
+    padding: 20px; /* Add padding */
+    border: 1px solid #ccc; /* Set border properties */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* Explanation for #introduction: Styling for the introduction section */
+#introduction {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Add space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+}
+
+#profile figure {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the column */
+}
+
+#contact a {
+    box-shadow: inset 0 0 0 0 var(--primary-color); /* Add inset box shadow */
+    color: var(--primary-color); /* Set text color using a CSS variable */
+    margin: 0 -.25rem; /* Adjust margin */
+    padding: 0 .25rem; /* Adjust padding */
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out; /* Add transition effects */
+}
+
+#contact a:hover {
+    box-shadow: inset 20rem 0 0 0 var(--primary-color); /* Change box shadow on hover */
+    color: white; /* Set text color to white on hover */
+}
+
+/* Style the profile picture */
+img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the headings inside the article */
+h2 {
+    font-size: 24px; /* Set font size */
+    color: #333; /* Set text color */
+    margin-top: 0; /* Remove top margin */
+}
+
+h3 {
+    font-size: 20px; /* Set font size */
+    color: #333; /* Set text color */
+    margin-top: 0; /* Remove top margin */
+    text-decoration: underline; /* Add underline */
+}
+
+/* Style the list items */
+li {
+    font-size: 16px; /* Set font size */
+    line-height: 1.5; /* Adjust line height */
+}
+
+/* Style the links */
+a {
+    color: #0073e6; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style the tables */
+table {
+    width: 100%; /* Set table width */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-bottom: 20px; /* Add margin below the table */
+}
+
+th,
+td {
+    border: 1px solid #ccc; /* Set border properties for table cells */
+    padding: 10px; /* Add padding to table cells */
+    text-align: left; /* Set text alignment to left */
+}
+
+/* Style the copyright text */
+#copyright {
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add margin to the top of the copyright text */
+    padding: 10px; /* Add padding to the copyright text */
+    background-color: #333; /* Set background color */
+    color: white; /* Set text color to white */
+}
+
+/* Styling Text and Links: Use Google Fonts to style your text and apply pseudo-classes to links for hover effects. */
+/* Use Google Fonts for text */
+body {
+    font-family: 'Open Sans', Arial, sans-serif; /* Set font family */
+}
+
+/* CSS Variables and Best Practices: Use CSS variables for colors and font sizes. Apply BEM naming conventions to your classes. */
+/* Define CSS variables for colors */
+:root {
+    --primary-color: #0073e6; /* Define primary color using a CSS variable */
+    --secondary-color: #333; /* Define secondary color using a CSS variable */
+    --text-color: #333; /* Define text color using a CSS variable */
+    --background-color: #f5f5f5; /* Define background color using a CSS variable */
+}
+
+/* Apply CSS variables to elements */
+body {
+    background-color: var(--background-color); /* Use CSS variable for background color */
+    color: var(--text-color); /* Use CSS variable for text color */
+}
+
+header {
+    background-color: var(--secondary-color); /* Use CSS variable for background color */
+}
+
+a {
+    color: var(--primary-color); /* Use CSS variable for link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* CSS for the main header div */
+#h-div {
+    border: solid black 2px; /* Set border properties */
+}
+
+/* CSS for images */
+img {
+    width: 150px; /* Set image width */
+}
+
+/* CSS for header */
+header {
+    text-align: center; /* Center-align the text */
+}
+
+/* CSS for tables */
+table {
+    text-align: left; /* Set text alignment to left */
+    width: 100%; /* Set table width */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-bottom: 20px; /* Add margin below the table */
+}
+
+table,
+th,
+td {
+    border: 1px solid black; /* Set border properties for table */
+}
+
+th,
+td {
+    padding: 8px; /* Add padding to table cells */
+    text-align: left; /* Set text alignment to left */
+}
+
+/* CSS for the whole page body */
+body {
+    margin: 0 5% 1% 5%; /* Set margins for the entire page body */
+}
+
+/* CSS for underlined headings */
+h3 {
+    text-decoration: underline; /* Add underline to h3 headings */
+}
+
+/* CSS for captions */
+caption {
+    font-weight: bold; /* Set font weight for captions */
+}
+
+/* CSS for a specific section */
+#websites {
+    padding: 0;
+    border: solid black 2px; /* Set border properties */
+    list-style-type: none; /* Remove list style for the specific section */
+}
+
+#my-favorite-websites figure {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 4fr; /* Define grid columns */
+    grid-gap: 1rem; /* Set grid gap */
+}
+
+/* CSS for website logos */
+.website_logo {
+    border: solid rgb(0, 255, 251) 2px; /* Set border properties for website logos */
+    height: 3.5rem; /* Set height for website logos */
+}
+
+/* CSS for boxes */
+.box {
+    box-sizing: border-box; /* Use border-box for box sizing */
+    width: 10px; /* Set width */
+    height: 10px; /* Set height */
+    padding: 10px; /* Add padding */
+}
+
+/* CSS for a specific box */
+#black-box {
+    border: 2px solid black; /* Set border properties for a specific box */
+}
+
+/* CSS for another specific box */
+#blue-box {
+    border: 2px solid rgb(0, 255, 251); /* Set border properties for another specific box */
+}
+
+iframe {
+    width: 56rem; /* Set iframe width */
+    height: 31.5rem; /* Set iframe height */
+}
+
+/* CSS for forms */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.contact-form {
+    padding: 10px; /* Add padding to form elements */
+    margin: 5px; /* Add margin to form elements */
+}
+
+/* CSS for copyright text */
+#copyright {
+    text-align: center; /* Center-align the text */
+}
+
+#down-direction-circle {
+    transform: rotate(180deg);
+    position: fixed; /* Make the element fixed */
+    top: 1rem; /* Position it from the bottom */
+    right: 1rem; /* Position it from the right */
+    width: 3rem; /* Set width */
+}
+
+#up-direction-circle {
+    position: fixed; /* Make the element fixed */
+    bottom: 1rem; /* Position it from the bottom */
+    right: 1rem; /* Position it from the right */
+    width: 3rem; /* Set width */
+}
+
+#down-direction-circle:hover, #up-direction-circle:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+    border-radius: 1.5rem; /* Add border-radius on hover */
+}
+
+.anibox {
+    left: -2rem; /* Position it to the left */
+    position: relative; /* Set relative positioning */
+    width: 1rem; /* Set width */
+    height: 1rem; /* Set height */
+    background-color: darkslateblue; /* Set background color */
+    animation: ashrinkandgrow 2s 1ms infinite alternate; /* Apply animation */
+}
+
+@keyframes ashrinkandgrow {
+    from {
+        width: 1rem; /* Initial width for animation */
+        height: 1rem; /* Initial height for animation */
+    }
+
+    to {
+        width: 2rem; /* Final width for animation */
+        height: 2rem; /* Final height for animation */
+    }
+}
+
+@media (max-width: 1024px) {
+    #topnav li {
+        display: block; /* Change list items to block elements */
+        width: 100%; /* Set width to 100% */
+    }
+
+    iframe {
+        width: 40rem; /* Adjust iframe width for smaller screens */
+        height: 25rem; /* Adjust iframe height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 25rem; /* Adjust iframe width for smaller screens */
+        height: 15rem; /* Adjust iframe height for smaller screens */
+    }
+
+    /* Explanation for #my-favorite-websites in a smaller viewport: Adjust grid layout */
+    #my-favorite-websites figure {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 1fr; /* Change grid to single column layout */
+        grid-template-rows: 1fr 2fr; /* Set grid rows */
+        grid-gap: 1rem; /* Set grid gap */
+    }
+
+    .website_logo {
+        height: 100%; /* Set height to 100% for website logos */
+    }
+}
+
+@media (max-width: 480px) {
+    iframe {
+        width: 15rem; /* Adjust iframe width for mobile screens */
+        height: 10rem; /* Adjust iframe height for mobile screens */
+    }
+
+    /* Explanation for #my-favorite-websites in a mobile viewport: Adjust grid layout */
+    #my-favorite-websites figure {
+        display: grid; /* Use grid layout */
+        grid-template-columns: 1fr; /* Change grid to single column layout */
+        grid-template-rows: 1fr 5fr; /* Set grid rows */
+        grid-gap: 1rem; /* Set grid gap */
+    }
+}
